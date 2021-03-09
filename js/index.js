@@ -14,6 +14,12 @@ img.addEventListener('mouseover', function(event) {
   document.body.style.backgroundColor = color === 'white' ? 'green' : 'white'
 })
 
+// mousedown
+img.addEventListener('mousedown', function(event) {
+  const color = document.body.style.backgroundColor
+  document.body.style.backgroundColor = color === 'white' ? 'beige' : 'white'
+})
+
 // dblclick
 document.addEventListener('dblclick', function(event) {
   const color = document.body.style.backgroundColor
@@ -35,6 +41,11 @@ document.addEventListener('keyup', function(event) {
 document.addEventListener('scroll', function(event) {
   const color = document.body.style.backgroundColor
   document.body.style.backgroundColor = color === 'white' ? 'azure' : 'white'
+})
+
+// load
+document.addEventListener('load', function(event) {
+  document.body.style.backgroundColor = 'aquamarine'
 })
 
 // wheel
